@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DatetimePicker for Bootstrap v3.x</title>
+<link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="src/css/bootstrap-datetimepicker.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>
+    SIMPLE DEMO 
+  </h1>
+  <hr>
+  <div class="well">
+    <div id="datetimepicker1" class="input-append date">
+      <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input>
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+          Open
+        </i>
+      </span>
+    </div>
+  </div>
+
+  <pre class="prettyprint linenums">
+  &lt;div class="well"&gt;
+    &lt;div id="datetimepicker1" class="input-append date"&gt;
+      &lt;input data-format="dd/MM/yyyy hh:mm:ss" type="text"&gt;&lt;/input&gt;
+      &lt;span class="add-on"&gt;
+        &lt;i data-time-icon="icon-time" data-date-icon="icon-calendar"&gt;
+        &lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </pre>
+
+  <pre id="datetimepickerCode" class="prettyprint linenums">
+  $('#datetimepicker1').datetimepicker({
+    language: 'pt-BR'
+  });
+  </pre>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy;
+    </p>
+  </footer>
+</div>
+
+<script src="bootstrap/jquery-1.10.2.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+<script src="src/js/bootstrap-datetimepicker.js"></script>
+<script>
+  $('#datetimepicker1').datetimepicker({
+    language: 'pt-BR'
+  });
+</script>
+
+</body>
+</html>
